@@ -192,6 +192,7 @@ footer {
 @media screen and (max-width: 1000px) {
 	body {
 		font-size: 200%;
+		background: #0e0e10;
 	}
 	
 	.container {
