@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Traumz Menu</title>
+		<link href="main.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="left-side">
+					<div><span class="title">Nightbot Menu</span></div>
+				</div>
+				<div class="right-side">
+				
+					<div class="header-link-wrapper" id="active-header-link">
+						<a href="index.html">Traumz</a>
+					</div>
+					
+					<div class="header-link-wrapper">
+						<a href="pizza.html">italianstallion_214</a>
+					</div>
+					
+				</div>
+			</header>
+			<nav>
+					<div>
+						<a href="https://www.twitch.tv/traumz" target="_blank" rel="noopener noreferrer"><img src="traumzlogo.png" alt="Traumz Logo" width="100px"></a>
+					</div>
+					<div class="sidebar-item" id="pie-link">
+						<a>Pies</a>
+					</div>
+					<div class="sidebar-item" id="muffin-link">
+						<a>Muffins</a>
+					</div>
+			</nav>
+
+			<main>
+				<div id="pie-content">
+					<h2 class="top">Common Pies <span>54%</span></h2>
+					<ul>
+						<li>banana cream pie</li>
+						<li>blueberry pie</li>
+						<li>chestnut pie</li>
+						<li>chicken pot pie</li>
+						<li>chocolate cream pie</li>
+						<li>chocolate hazelnut pie</li>
+						<li>coconut cream pie</li>
+						<li>cranberry pie</li>
+						<li>ice cream pie</li>
+						<li>mixed berry pie</li>
+						<li>peach pie</li>
+						<li>pear pie</li>
+						<li>pineapple pie</li>
+						<li>pumpkin pie</li>
+						<li>strawberry rhubarb pie</li>
+						<li>turtle pie</li>
+					</ul>
+					
+					<h2>Uncommon Pies <span>40%</span></h2>
+					<ul>
+						<li>apple pie</li>
+						<li>blackberry pie</li>
+						<li>boysenberry pie</li>
+						<li>butterscotch pie</li>
+						<li>caramel apple pie</li>
+						<li>cherry pie</li>
+						<li>chocolate peanut butter pie</li>
+						<li>cookies and cream pie</li>
+						<li>custard pie</li>
+						<li>french silk pie</li>
+						<li>key lime pie</li>
+						<li>lemon meringue pie</li>
+						<li>mincemeat pie</li>
+						<li>mississippi mud pie</li>
+						<li>pecan pie</li>
+						<li>raspberry pie</li>
+						<li>shepherd's pie</li>
+						<li>strawberry pie</li>
+					</ul>
+					
+					<h2>Rare Pies <span>5%</span></h2>
+					<ul>
+						<li>cheesecake</li>
+						<li>prickly pear pie</li>
+						<li>apple pie à la mode</li>
+						<li>blackberry pie à la mode</li>
+						<li>boysenberry pie à la mode</li>
+						<li>cherry pie à la mode</li>
+						<li>raspberry pie à la mode</li>
+					</ul>
+					
+					<h2>Legendary Pies <span>1%</span></h2>
+					<ul>
+						<li>cow pie</li>
+						<li>creampie</li>
+						<li>cutie pie</li>
+					</ul>
+					
+				</div>
+				<div id="muffin-content" class="hide">
+					<h2 class="top">Common Muffins <span>54%</span></h2>
+					<ul>
+						<li>banana nut muffin</li>
+						<li>blueberry muffin</li>
+						<li>coconut muffin</li>
+						<li>lemon poppy seed muffin</li>
+						<li>oatmeal muffin</li>
+						<li>raspberry muffin</li>
+					</ul>
+					
+					<h2>Uncommon Muffins <span>40%</span></h2>
+					<ul>
+						<li>chocolate chip muffin</li>
+						<li>coffee cake muffin</li>
+						<li>cornbread muffin</li>
+						<li>maple walnut muffin</li>
+						<li>peanut butter muffin</li>
+						<li>pecan muffin</li>
+						<li>pumpkin muffin</li>
+					</ul>
+					
+					<h2>Rare Muffins <span>5%</span></h2>
+					<ul>
+						<li>apple cinnamon muffin</li>
+						<li>chocolate chunk muffin</li>
+						<li>snickerdoodle muffin</li>
+					</ul>
+					
+					<h2>Legendary Muffins <span>1%</span></h2>
+					<ul class="bottom">
+						<li>Kecatas' 'special' muffin</li>
+					</ul>
+					
+				</div>
+			</main>
+
+			<aside>
+				<div>
+					<a href="https://discord.gg/Q2deeddud9" target="_blank" rel="noopener noreferrer"><img src="discord.jpg" alt="Discord Button" width="100px"></a>
+				</div>
+				<div class="text">
+					Join their Discord and get even more options with Piebot!
+				</div>
+			</aside>
+
+			<footer>
+				🤔
+			</footer>
+		</div>
+		<script>
+			var pieButton = document.getElementById("pie-link");
+			var pieContent = document.getElementById("pie-content");
+			var muffinButton = document.getElementById("muffin-link");
+			var muffinContent = document.getElementById("muffin-content");
+			
+			var showPie = 1;
+			
+			pieButton.className = "sidebar-item active-sidebar";
+			
+			pieButton.addEventListener("click", function() {
+				if(showPie != 1) {
+					pieContent.className = "";
+					muffinContent.className = "hide";
+					pieButton.className = "sidebar-item active-sidebar";
+					muffinButton.className = "sidebar-item";
+					showPie = 1;
+				}
+			});
+			muffinButton.addEventListener("click", function() {
+				if(showPie == 1) {
+					pieContent.className = "hide";
+					muffinContent.className = "";
+					pieButton.className = "sidebar-item";
+					muffinButton.className = "sidebar-item active-sidebar";
+					showPie = 0;
+				}
+			});
+			
+		</script>
+	</body>
+</html>
