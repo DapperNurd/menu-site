@@ -133,10 +133,6 @@ h2 span {
 	font-weight: bold;
 }
 
-.pie-content {
-	background: #0e0e10;
-}
-
 .pie-content p {
 	padding-left: 30px;
 }
@@ -196,7 +192,6 @@ footer {
 @media screen and (max-width: 1000px) {
 	body {
 		font-size: 200%;
-		background: #1f1f23;
 	}
 	
 	.container {
