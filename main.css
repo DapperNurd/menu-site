@@ -133,6 +133,10 @@ h2 span {
 	font-weight: bold;
 }
 
+.pie-content {
+	background: #0e0e10;
+}
+
 .pie-content p {
 	padding-left: 30px;
 }
