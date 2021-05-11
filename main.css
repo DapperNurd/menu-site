@@ -27,11 +27,10 @@ header {
 	background: #18181b;
 	display: flex;
 	justify-content: space-between;
-	padding: 0px 50px;
+	padding: 0px 30px;
 	text-transform: uppercase;
 	font-size: 115%;
-	#border-bottom: 0.5px solid #b9a3e3;
-	border-bottom: 0.5px solid black;
+	box-shadow: 10px 5px 5px red;
 	align-items: center;
 }
 
@@ -118,6 +117,7 @@ main {
 
 .top {
 	margin-top: 0px;
+	font-size: 200%
 }
 
 h2 {
@@ -125,6 +125,28 @@ h2 {
 	padding: 15px 30px 15px 30px;
 	color: #fff;
 	background: #0c0c0e;
+	margin-bottom: 0;
+}
+
+.top a:link {
+  color: #a66aff;
+  text-decoration: none;
+}
+
+/* visited link */
+.top a:visited {
+  color: #a66aff;
+}
+
+/* mouse over link */
+.top a:hover {
+  color: #a66aff;
+  text-decoration: underline;
+}
+
+/* selected link */
+.top a:active {
+  color: #6f22e1;
 }
 
 h2 span {
@@ -137,16 +159,25 @@ h2 span {
 	padding-left: 30px;
 }
 
+.categories {
+	font-size: 140%;
+}
+
+.odd {
+	background: #131315;
+}
+
 ul {
 	margin: 0px;
 	padding: 0px;
-	padding-left: 35px;
+	
+	list-style-type: none;
 }
 
 li {
-	list-style-type: none;
-	display: inline-block;
-	padding: 8px;
+	display: block;
+	padding: 18px 8px;
+	padding-left: 35px;
 }
 
 .hide {
@@ -181,7 +212,6 @@ footer {
 	height: 50px;
 	line-height: 50px;
 	padding: 0px 40px;
-	margin-top: 30px;
 	text-align: center;
 	border-left: 1px solid #0a0a0a;
 	border-right: 1px solid #0a0a0a;
@@ -192,7 +222,6 @@ footer {
 @media screen and (max-width: 1000px) {
 	body {
 		font-size: 200%;
-		background: #0e0e10;
 	}
 	
 	.container {
@@ -212,6 +241,11 @@ footer {
 	header .right-side {
 		margin-bottom: 10px;
 		padding-top: 2px;
+	}
+	
+	.categories li {
+		padding-top: 45px;
+		padding-left: 25px;
 	}
 	
 	h2 {
