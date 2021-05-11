@@ -24,13 +24,27 @@
 		<div class="container">
 			<header>
 				<div class="left-side">
-					<div><span class="title">Piebot Trivia Categories</span></div>
+					<div><span class="title">Piebot<br>Trivia Categories</span></div>
+				</div>
+				<div class="right-side">
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">Categories on Random</button>
+						<div id="myDropdown" class="dropdown-content">
+							<div class="odd" style="border-bottom: 2px solid #0e0e0e; text-align: center;">When using a random category, the bot picks one from this list.</div>
+							<div>11 - Entertainment: Film</div>
+							<div class="odd">14 - Entertainment: Television</div>
+							<div>15 - Entertainment: Video Games</div>
+							<div class="odd">27 - Animals</div>
+							<div>31 - Entertainment: Japanese Anime & Manga</div>
+							<div class="odd">32 - Entertainment: Cartoon & Animations</div>
+						</div>
+					</div>
 				</div>
 			</header>
 
 			<main>
 
-					<h2 class="top">From <a href="https://opentdb.com/" rel="noopener noreferrer">Open Trivia BD</a></h2>
+					<h2 class="top">From <a href="https://opentdb.com/" rel="noopener noreferrer">Open Trivia BD</a></h2> 
 					<ul class="categories">
 						<li class="odd"> 9 - General Knowledge</li>
 						<li>10 - Entertainment: Books</li>
@@ -63,5 +77,26 @@
 				🤔
 			</footer>
 		</div>
+		<script>
+			/* When the user clicks on the button,
+			toggle between hiding and showing the dropdown content */
+			function myFunction() {
+			  document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown menu if the user clicks outside of it
+			window.onclick = function(event) {
+			  if (!event.target.matches('.dropbtn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				var i;
+				for (i = 0; i < dropdowns.length; i++) {
+				  var openDropdown = dropdowns[i];
+				  if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				  }
+				}
+			  }
+			} 
+		</script>
 	</body>
 </html>
