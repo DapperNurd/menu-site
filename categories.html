@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Trivia Categories</title>
+		<link href="main.css" rel="stylesheet"/>
+		<style>
+			.container {
+			  display: grid;
+
+			  grid-template-areas:
+				"header header header"
+				"content content content"
+				"footer footer footer";
+
+			  grid-template-columns: 200px 1fr 200px;
+			  grid-template-rows: auto 1fr auto;
+			  grid-gap: 0px;
+
+			  height: 100vh;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="left-side">
+					<div><span class="title">Piebot Trivia Categories</span></div>
+				</div>
+			</header>
+
+			<main>
+
+					<h2 class="top">From <a href="https://opentdb.com/" rel="noopener noreferrer">Open Trivia BD</a></h2>
+					<ul class="categories">
+						<li class="odd"> 9 - General Knowledge</li>
+						<li>10 - Entertainment: Books</li>
+						<li class="odd">11 - Entertainment: Film</li>
+						<li>12 - Entertainment: Music</li>
+						<li class="odd">13 - Entertainment: Musicals & Theatres</li>
+						<li>14 - Entertainment: Television</li>
+						<li class="odd">15 - Entertainment: Video Games</li>
+						<li>16 - Entertainment: Board Games</li>
+						<li class="odd">17 - Science & Nature</li>
+						<li>18 - Science: Computers</li>
+						<li class="odd">19 - Science: Mathematics</li>
+						<li>20 - Mythology</li>
+						<li class="odd">21 - Sports</li>
+						<li>22 - Geography</li>
+						<li class="odd">23 - History</li>
+						<li>24 - Politics</li>
+						<li class="odd">25 - Art</li>
+						<li>26 - Celebrities</li>
+						<li class="odd">27 - Animals</li>
+						<li>28 - Vehicles</li>
+						<li class="odd">29 - Entertainment: Comics</li>
+						<li>30 - Science: Gadgets</li>
+						<li class="odd">31 - Entertainment: Japanese Anime & Manga</li>
+						<li>32 - Entertainment: Cartoon & Animations</li>
+					</ul>
+			</main>
+
+			<footer>
+				🤔
+			</footer>
+		</div>
+	</body>
+</html>
